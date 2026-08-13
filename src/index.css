@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/600.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+@theme {
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  /* Neutrals — theme-adaptive. Values below are the light (default) mode;
+     see [data-theme="dark"] further down for the dark-mode overrides. */
+  --color-ink: #14141a;
+  --color-void: #f5f4ee;
+  --color-surface: #ffffff;
+  --color-surface-raised: #f0efe7;
+  --color-line: #dedcd0;
+  --color-muted: #6b6a62;
+
+  /* Accents used for solid fills / borders / shadows — stay vivid in both
+     themes since they never carry small body text on their own. */
+  --color-signal: #d7ff3f;
+  --color-signal-dim: #a8c72f;
+  --color-flare: #ff5c38;
+  --color-flare-dim: #c94526;
+  --color-wire: #5fb4ff;
+
+  /* Always-dark, regardless of theme — for text/icons sitting on a bright
+     accent fill (e.g. the lime CTA button), where the label must stay legible. */
+  --color-accent-ink: #0a0a0c;
+
+  /* Same accent hues, re-tuned for use as small readable text/borders
+     directly on the page background — theme-adaptive. */
+  --color-signal-text: #5c7a00;
+  --color-flare-text: #c8391a;
+  --color-wire-text: #1857b0;
+}
+
+:root[data-theme="dark"] {
+  --color-ink: #f4f2ea;
+  --color-void: #0a0a0c;
+  --color-surface: #121216;
+  --color-surface-raised: #18181d;
+  --color-line: #2c2c33;
+  --color-muted: #9a9aa3;
+
+  --color-signal-text: #d7ff3f;
+  --color-flare-text: #ff5c38;
+  --color-wire-text: #5fb4ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-void);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-signal);
+  color: var(--color-accent-ink);
+}
+
+/* graph-paper backdrop used behind the whole app */
+.grid-field {
+  background-image:
+    linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: -1px -1px;
+}
+
+.hard-shadow {
+  box-shadow: 6px 6px 0 0 var(--color-signal);
+}
+
+.hard-shadow-flare {
+  box-shadow: 6px 6px 0 0 var(--color-flare);
+}
+
+.hard-shadow-sm {
+  box-shadow: 4px 4px 0 0 var(--color-signal);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-void);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border: 2px solid var(--color-void);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-signal-dim);
+}
