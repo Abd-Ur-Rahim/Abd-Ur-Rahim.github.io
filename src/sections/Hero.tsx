@@ -84,7 +84,7 @@ export const Hero = () => {
           </a>
         </motion.div>
 
-        <motion.dl
+        {/* <motion.dl
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -96,7 +96,7 @@ export const Hero = () => {
               <dd className="font-display text-3xl font-bold text-ink">{stat.value}</dd>
             </div>
           ))}
-        </motion.dl>
+        </motion.dl> */}
       </div>
     </section>
   );
