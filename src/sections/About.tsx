@@ -29,7 +29,7 @@ export const About = () => (
             </li>
             <li className="flex justify-between gap-4 border-b border-line pb-3">
               <span>Looking for</span>
-              <span className="text-right text-ink">ML Engineering internship</span>
+              <span className="text-right text-ink">ML or Software Engineering internship</span>
             </li>
             <li className="flex justify-between gap-4">
               <span>Based in</span>
