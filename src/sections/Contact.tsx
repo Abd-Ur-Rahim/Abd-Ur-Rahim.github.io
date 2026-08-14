@@ -20,7 +20,7 @@ export const Contact = () => {
             Let's build something
           </span>
           <h3 className="font-display text-3xl font-bold uppercase leading-tight text-ink sm:text-5xl">
-            Open to ML Engineering internships & collaborations
+            Open to ML & Software Engineering collaborations
           </h3>
         </div>
 
