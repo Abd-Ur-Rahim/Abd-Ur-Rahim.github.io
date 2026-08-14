@@ -19,10 +19,10 @@ export const profile = {
     "Full-Stack Builder",
     "Data Scientist",
   ],
-  stats: [
-    { label: "Years in ML/CV", value: "2+" },
-    { label: "Shipped builds", value: "5" },
-    { label: "Competition placements", value: "4" },
-    { label: "Languages spoken", value: "3" },
-  ],
+  // stats: [
+  //   // { label: "Years in ML/CV", value: "2+" },
+  //   { label: "Builds", value: "5" },
+  //   { label: "Competition placements", value: "4" },
+  //   { label: "Languages spoken", value: "3" },
+  // ],
 };
