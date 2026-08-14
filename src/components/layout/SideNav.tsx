@@ -51,7 +51,7 @@ export const SideNav = () => {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-signal opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-signal" />
           </span>
-          Open to ML & Software Engineering internships
+          Open to ML & Software Engineering collaborations
         </div>
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-4 text-muted">
